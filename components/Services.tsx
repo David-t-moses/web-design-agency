@@ -1,8 +1,6 @@
 import React from "react";
 import TransitionWrapper from "./TransitionWrapper";
-import Card from "./Card";
 import { services } from "@/lib/data";
-import Image from "next/image";
 
 const Services = () => {
   return (
