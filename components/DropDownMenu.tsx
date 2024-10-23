@@ -17,7 +17,7 @@ const DropDownMenu = () => {
       <DropdownMenuContent className="flex flex-col justify-between items-start gap-1 bg-white">
         <DropdownMenuItem>
           <Link
-            href="#"
+            href="/"
             className="font-semibold cursor-pointer hover:text-blue-600 focus:text-neutral-600 py-2"
           >
             Home
@@ -25,15 +25,7 @@ const DropDownMenu = () => {
         </DropdownMenuItem>
         <DropdownMenuItem>
           <Link
-            href="#"
-            className="font-semibold cursor-pointer hover:text-blue-600 focus:text-neutral-600 py-2"
-          >
-            Services
-          </Link>
-        </DropdownMenuItem>
-        <DropdownMenuItem>
-          <Link
-            href="#"
+            href="/about"
             className="font-semibold cursor-pointer hover:text-blue-600 focus:text-neutral-600 py-2"
           >
             About us
@@ -41,7 +33,15 @@ const DropDownMenu = () => {
         </DropdownMenuItem>
         <DropdownMenuItem>
           <Link
-            href="#"
+            href="/services"
+            className="font-semibold cursor-pointer hover:text-blue-600 focus:text-neutral-600 py-2"
+          >
+            Services
+          </Link>
+        </DropdownMenuItem>
+        <DropdownMenuItem>
+          <Link
+            href="/projects"
             className="font-semibold cursor-pointer hover:text-blue-600 focus:text-neutral-600 py-2"
           >
             Portfolio
@@ -49,7 +49,7 @@ const DropDownMenu = () => {
         </DropdownMenuItem>
         <DropdownMenuItem>
           <Link
-            href="#"
+            href="/blog"
             className="font-semibold cursor-pointer hover:text-blue-600 focus:text-neutral-600 py-2"
           >
             Blog
@@ -57,7 +57,7 @@ const DropDownMenu = () => {
         </DropdownMenuItem>
         <DropdownMenuItem>
           <Link
-            href="#"
+            href="/contact"
             className="font-semibold cursor-pointer hover:text-blue-600 focus:text-neutral-600 py-2"
           >
             Contact us

@@ -89,3 +89,78 @@ export const clients = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
   },
 ];
+
+export const projects = [
+  {
+    src: "/projects-1.jpg",
+    alt: "lorem",
+    title: "Lorem ipsum dolor",
+    desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo, repellendus",
+  },
+  {
+    src: "/projects-2.jpg",
+    alt: "lorem",
+    title: "Lorem ipsum dolor",
+    desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo, repellendus",
+  },
+  {
+    src: "/projects-3.jpg",
+    alt: "lorem",
+    title: "Lorem ipsum dolor",
+    desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo, repellendus",
+  },
+  {
+    src: "/projects-4.jpg",
+    alt: "lorem",
+    title: "Lorem ipsum dolor",
+    desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo, repellendus",
+  },
+  {
+    src: "/projects-3.jpg",
+    alt: "lorem",
+    title: "Lorem ipsum dolor",
+    desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo, repellendus",
+  },
+  {
+    src: "/projects-4.jpg",
+    alt: "lorem",
+    title: "Lorem ipsum dolor",
+    desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo, repellendus",
+  },
+  {
+    src: "/projects-1.jpg",
+    alt: "lorem",
+    title: "Lorem ipsum dolor",
+    desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo, repellendus",
+  },
+  {
+    src: "/projects-2.jpg",
+    alt: "lorem",
+    title: "Lorem ipsum dolor",
+    desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo, repellendus",
+  },
+  {
+    src: "/projects-3.jpg",
+    alt: "lorem",
+    title: "Lorem ipsum dolor",
+    desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo, repellendus",
+  },
+  {
+    src: "/projects-4.jpg",
+    alt: "lorem",
+    title: "Lorem ipsum dolor",
+    desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo, repellendus",
+  },
+  {
+    src: "/projects-3.jpg",
+    alt: "lorem",
+    title: "Lorem ipsum dolor",
+    desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo, repellendus",
+  },
+  {
+    src: "/projects-4.jpg",
+    alt: "lorem",
+    title: "Lorem ipsum dolor",
+    desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo, repellendus",
+  },
+];

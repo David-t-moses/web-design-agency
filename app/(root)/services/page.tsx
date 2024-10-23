@@ -1,11 +1,22 @@
+import HeroTwo from "@/components/Hero-2";
+import OurServices from "@/components/OurServices";
+import TransitionWrapper from "@/components/TransitionWrapper";
+import WhyInvestWithUs from "@/components/WhyInvestWithUs";
 import React from "react";
 
-const About = () => {
+const Services_page = () => {
   return (
-    <section className=" relative w-full max-w-[1200px] flex flex-col justify-start items-center gap-5 mx-auto py-32">
-      About
-    </section>
+    <div className="flex flex-col items-center min-h-screen">
+      <HeroTwo
+        src="/hero-3.webp"
+        alt="Services-hero-img"
+        header="ImpactFul Web Design and Development Services"
+        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
+      />
+      <OurServices />
+      <WhyInvestWithUs />
+    </div>
   );
 };
 
-export default About;
+export default Services_page;

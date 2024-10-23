@@ -15,7 +15,7 @@ const Hero = () => {
       <Carousel className="flex flex-col w-full !h-full mx-auto relative">
         <CarouselContent className="flex w-full !h-full mx-auto">
           <CarouselItem className="flex w-full !h-full">
-            <div className="relative flex w-full !h-full bg-red-900">
+            <div className="relative flex w-full !h-full ">
               <Image
                 src="/hero-1.jpg"
                 alt="Hero Img"
