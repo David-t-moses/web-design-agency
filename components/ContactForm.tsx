@@ -71,7 +71,27 @@ export function ContactForm() {
       if (!response.ok) {
         throw new Error("Submission failed");
       }
-P
+
+      // toast.success("Form submitted successfully!");
+      alert("Form submitted successfully!");
+      form.reset();
+    } catch (error) {
+      // toast.error("Failed to submit form. Please try again.");
+      alert("Failed to submit form. Please try again.");
+      console.error("Error:", error);
+    } finally {
+      // setIsLoading(false);
+    }
+  };
+
+  return (
+    <Form {...form}>
+      <form
+        onSubmit={handleSubmit}
+        className="w-full flex flex-col gap-5 md:w-4/5"
+      >
+        <FormField
+          control={form.control}
           name="username"
           render={({ field }) => (
             <FormItem>
