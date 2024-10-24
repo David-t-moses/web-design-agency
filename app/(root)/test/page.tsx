@@ -1,17 +1,11 @@
-import HeroSection from "@/components/HeroSection";
-import ProjectsSection from "@/components/projectsSection";
-import ServicesSection from "@/components/ServicesSection";
-import TestimonialsSection from "../../../components/Testimonials";
-import CTASection from "@/components/CTASection";
+import CompanyStory from "@/components/CompanyStory";
+import MissionValues from "@/components/MissionValues";
 
-export default function Home() {
+export default function About() {
   return (
     <main>
-      <HeroSection />
-      <ServicesSection />
-      <ProjectsSection />
-      <TestimonialsSection />
-      <CTASection />
+      <CompanyStory />
+      <MissionValues />
     </main>
   );
 }
