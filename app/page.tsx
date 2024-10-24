@@ -1,15 +1,17 @@
-import Hero from "@/components/Hero";
-import OurAgency from "@/components/OurAgency";
-import Services from "@/components/Services";
-import WhatClientsSay from "@/components/WhatClientsSay";
+import HeroSection from "@/components/HeroSection";
+import ProjectsSection from "@/components/projectsSection";
+import ServicesSection from "@/components/ServicesSection";
+import TestimonialsSection from "@/components/Testimonials";
+import CTASection from "@/components/CTASection";
 
 export default function Home() {
   return (
-    <div className="relative flex flex-col items-center min-h-screen ">
-      <Hero />
-      <Services />
-      <OurAgency />
-      <WhatClientsSay />
-    </div>
+    <main>
+      <HeroSection />
+      <ServicesSection />
+      <ProjectsSection />
+      <TestimonialsSection />
+      <CTASection />
+    </main>
   );
 }
