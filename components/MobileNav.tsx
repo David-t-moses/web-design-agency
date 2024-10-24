@@ -30,7 +30,7 @@ export default function MobileNavbar() {
   return (
     <nav
       ref={navRef}
-      className="fixed top-0 w-full bg-white shadow-md z-50 lg:hidden"
+      className="fixed top-0 w-full bg-white/70 backdrop-blur-md z-50 lg:hidden border-b "
     >
       <div className="px-4">
         <div className="flex items-center justify-between">

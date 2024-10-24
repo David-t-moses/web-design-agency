@@ -6,7 +6,7 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <nav className="fixed top-0 hidden left-0 lg:flex justify-center items-center w-full bg-white/70 backdrop-blur-md z-50 md:h-16 h-14">
+    <nav className="fixed top-0 hidden left-0 lg:flex justify-center items-center w-full bg-white/70 backdrop-blur-md z-50 md:h-16 h-14 border-b">
       <div className="w-full max-w-[1200px] flex justify-between items-center gap-5 px-5">
         <Link href="/" className="flex justify-between items-center">
           <Image src="/logo.png" alt="logo" width={70} height={70} />
@@ -61,7 +61,7 @@ const Navbar = () => {
             className="bg-blue-600 text-white hover:bg-blue-700 cursor-pointer rounded-[7px]"
           >
             <Link href="#">
-              Connect <FaLongArrowAltRight />
+              Get Started <FaLongArrowAltRight />
             </Link>
           </Button>
         </div>
