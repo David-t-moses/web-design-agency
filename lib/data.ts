@@ -164,3 +164,42 @@ export const projects = [
     desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo, repellendus",
   },
 ];
+
+export const blog = [
+  {
+    src: "/professional-design.jpg",
+    alt: "Importance-of-Professional-Web-Design",
+    header: "Importance-of-Professional-Web-Design",
+    link: "/blog/importance-of-professional-web-design",
+  },
+  {
+    src: "/trends-2024-modern.jpg",
+    alt: "Web Design Trends for 2024",
+    header: "Web Design Trends for 2024",
+    link: "/blog/web-design-trends-for-2024",
+  },
+  {
+    src: "/responsive-design-modern.jpg",
+    alt: "Why Your Website Needs to be Mobile-Friendly",
+    header: "Why Your Website Needs to be Mobile-Friendly",
+    link: "/blog/responsive-design",
+  },
+  {
+    src: "/agency-selection.jpg",
+    alt: "How to Choose the Right Web Design Agency for Your Business",
+    header: "How to Choose the Right Web Design Agency for Your Business",
+    link: "/blog/agency-selection",
+  },
+  {
+    src: "/website-strategy.jpg",
+    alt: "Why You Need a Clear Website Strategy Before Starting Development",
+    header: "Why You Need a Clear Website Strategy Before Starting Development",
+    link: "/blog/website-strategy",
+  },
+  {
+    src: "/website-analytics.jpg",
+    alt: "The Importance of Website Analytics in Website Design",
+    header: "The Importance of Website Analytics in Website Design",
+    link: "/blog/website-analytics",
+  },
+];

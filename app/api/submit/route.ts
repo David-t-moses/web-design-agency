@@ -19,20 +19,37 @@ export async function POST(request: Request) {
   try {
     const formData = await request.json();
 
-    // Create email content
     const mailOptions = {
       from: process.env.SMTP_USER,
-      to: recipientEmails.join(", "), // Join all emails with comma
+      to: recipientEmails.join(", "),
       subject: "New Form Submission",
       html: `
-        <h1>New Form Submission</h1>
-        <p><strong>Username:</strong> ${formData.username}</p>
-        <p><strong>Email:</strong> ${formData.email}</p>
-        ${
-          formData.message
-            ? `<p><strong>Message:</strong> ${formData.message}</p>`
-            : ""
-        }
+        <div style="background-color: #ffffff; padding: 20px; font-family: Arial, sans-serif;">
+          <div style="background-color: #1d4ed8; padding: 20px; border-radius: 8px;">
+            <h1 style="color: #ffffff; margin: 0; font-size: 24px;">New Form Submission</h1>
+          </div>
+          
+          <div style="padding: 20px; background-color: #ffffff; border: 1px solid #1d4ed8; border-radius: 8px; margin-top: 20px;">
+            <div style="margin-bottom: 15px;">
+              <p style="color: #1d4ed8; font-weight: bold; margin-bottom: 5px;">Username:</p>
+              <p style="color: #000000; margin: 0;">${formData.username}</p>
+            </div>
+            
+            <div style="margin-bottom: 15px;">
+              <p style="color: #1d4ed8; font-weight: bold; margin-bottom: 5px;">Email:</p>
+              <p style="color: #000000; margin: 0;">${formData.email}</p>
+            </div>
+            
+            <div style="margin-bottom: 15px;">
+              <p style="color: #1d4ed8; font-weight: bold; margin-bottom: 5px;">Message:</p>
+              <p style="color: #000000; margin: 0;">${formData.message}</p>
+            </div>
+          </div>
+          
+          <div style="text-align: center; margin-top: 20px; padding: 20px; background-color: #1d4ed8; border-radius: 8px;">
+            <p style="color: #ffffff; margin: 0;">This is an automated message from your website form submission</p>
+          </div>
+        </div>
       `,
     };
 

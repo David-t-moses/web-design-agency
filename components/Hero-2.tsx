@@ -19,9 +19,9 @@ const HeroTwo = ({
     <section className=" relative w-full lg:h-screen flex flex-col justify-start items-center gap-5 mx-auto pt-[62px]">
       <div className="relative flex w-full !h-full">
         <Image src={src} alt={alt} height={100000} width={100000} />
-        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-blue-700/95 to-transparent z-40" />
+        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-blue-700/95 to-transparent z-30" />
         <div
-          className="absolute flex flex-col justify-center left-[3%] top-2 w-1/2 h-full z-50 
+          className="absolute flex flex-col justify-center left-[3%] top-2 w-1/2 h-full z-40 
               "
         >
           <TransitionWrapper>

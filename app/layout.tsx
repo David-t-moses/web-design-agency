@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import { Roboto } from "next/font/google";
 import Footer from "@/components/Footer";
 import { Toaster } from "sonner";
+import MobileNavbar from "@/components/MobileNav";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -41,6 +42,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${roboto.variable} antialiased relative bg-white/80`}>
         <Navbar />
+        <MobileNavbar />
         {children}
         <Toaster />
         <Footer />

@@ -16,7 +16,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "./ui/textarea";
 import { FaPaperPlane } from "react-icons/fa";
-import { useState } from "react";
+import { toast } from "sonner";
 
 const formSchema = z.object({
   username: z.string().min(2, {
@@ -34,13 +34,6 @@ const formSchema = z.object({
 });
 
 export function ContactForm() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
-  });
-
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -51,14 +44,7 @@ export function ContactForm() {
     },
   });
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = async (values: z.infer<typeof formSchema>, e: any) => {
-    e.preventDefault();
+  const onSubmit = async (values: z.infer<typeof formSchema>) => {
     try {
       const response = await fetch("/api/submit", {
         method: "POST",
@@ -72,12 +58,10 @@ export function ContactForm() {
         throw new Error("Submission failed");
       }
 
-      // toast.success("Form submitted successfully!");
-      alert("Form submitted successfully!");
+      toast.success("Form submitted successfully!");
       form.reset();
     } catch (error) {
-      // toast.error("Failed to submit form. Please try again.");
-      alert("Failed to submit form. Please try again.");
+      toast.error("Failed to submit form. Please try again.");
       console.error("Error:", error);
     } finally {
       // setIsLoading(false);
@@ -87,7 +71,7 @@ export function ContactForm() {
   return (
     <Form {...form}>
       <form
-        onSubmit={handleSubmit}
+        onSubmit={form.handleSubmit(onSubmit)}
         className="w-full flex flex-col gap-5 md:w-4/5"
       >
         <FormField
