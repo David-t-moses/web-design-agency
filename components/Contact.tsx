@@ -10,7 +10,7 @@ const Contact = () => {
           <div className="flex flex-col px-4 pb-4 mx-auto items-center justify-center text-center w-4/5">
             <h1 className="text-3xl font-bold ">
               Let's Know how we can{" "}
-              <span className="text-blue-700">Your Impact Online Presence</span>{" "}
+              <span className="text-blue-700">Impact Your Online Presence</span>{" "}
             </h1>
           </div>
           <div className="flex flex-col p-8 mx-auto items-center justify-center bg-blue-200 h-full rounded-lg">
